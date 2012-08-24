@@ -9,10 +9,11 @@ Uses the following:
 * [tween.lua](https://github.com/kikito/tween.lua)
 * [strict.lua](http://metalua.luaforge.net/src/lib/strict.lua.html)
 
-Includes the following for fast use:
+Includes the following for fast integration:
 * [Quickie](https://github.com/vrld/Quickie) for buttons and menus
 * [HardonCollider](http://vrld.github.com/HardonCollider/) for collision detection
 
 Stuff I added:
 * Resource loading on start-up for images, sounds and shaders.
 * Working (but maybe suboptimal) HSV/RGB shader functions (I like rainbows)
+* Some shortcuts for love functions
