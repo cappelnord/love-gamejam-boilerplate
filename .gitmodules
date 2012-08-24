@@ -1,0 +1,12 @@
+[submodule "libs/hump"]
+	path = libs/hump
+	url = https://github.com/vrld/hump
+[submodule "libs/Quickie"]
+	path = libs/Quickie
+	url = https://github.com/vrld/Quickie
+[submodule "libs/tween"]
+	path = libs/tween
+	url = https://github.com/kikito/tween.lua
+[submodule "libs/HardonCollider"]
+	path = libs/HardonCollider
+	url = git://github.com/vrld/HardonCollider.git
