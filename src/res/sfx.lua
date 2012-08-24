@@ -14,7 +14,14 @@ for k, v in pairs(src) do
 	if #v > 2 then how = v[3] end
 	if #v > 3 then vol = v[4] end
 	if #v > 4 then looping = v[5] end
-	local sfx = love.audio.newSource(dir .. v[2], how)
+
+	local file = dir .. v[2]
+	if not love.filesystem.exists(file) then
+		print("SFX: Could not load " .. dir)
+		file = dir .. "silence.ogg"
+	end
+
+	local sfx = love.audio.newSource(file, how)
 	sfx:setLooping(looping)
 	sfx:setVolume(vol)
 

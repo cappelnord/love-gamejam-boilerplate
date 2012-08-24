@@ -5,6 +5,7 @@ LG = love.graphics
 -- load libs
 require("libs.strict")
 require("libs.strict_override")
+require("libs.pimplove")
 Tween = require("libs.tween.tween")
 Gamestate = require("libs.hump.gamestate")
 
