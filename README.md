@@ -12,6 +12,7 @@ Uses the following:
 Includes the following for fast integration:
 * [Quickie](https://github.com/vrld/Quickie) for buttons and menus
 * [HardonCollider](http://vrld.github.com/HardonCollider/) for collision detection
+* [Advanced-Tiled-Loader](https://github.com/Kadoba/Advanced-Tiled-Loader) for sweet tile maps
 
 Stuff I added:
 * Resource loading on start-up for images, sounds and shaders.

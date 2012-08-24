@@ -6,3 +6,7 @@ NO_WIDGET   = nil
 
 -- HardonCollider
 common = nil
+
+-- AdvTiledLoader
+TILED_LOADER_PATH = nil
+tileSetProperties = nil

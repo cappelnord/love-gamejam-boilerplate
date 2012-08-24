@@ -14,8 +14,10 @@ windir=~/Downloads/love-0.8.0-win-x86
 osxapp=/Applications/love.app
 
 game=GAMENAME
-sources=main.lua conf.lua src/**/*.lua libs/**/*.lua **/*.lua 
-res=gfx/*.* sfx/*.* src/res/*.inc
+
+# better read up how to do things right ...
+sources=main.lua conf.lua src/**/*.lua libs/**/**/*.lua libs/**/*.lua **/*.lua 
+res=gfx/*.* sfx/*.* src/res/*.inc maps/*.*
 
 .PHONY : run test love clean win
 
