@@ -15,10 +15,18 @@ for k, v in pairs(src) do
 	if #v > 3 then vol = v[4] end
 	if #v > 4 then looping = v[5] end
 
-	local file = dir .. v[2]
-	if not love.filesystem.exists(file) then
-		print("SFX: Could not load " .. dir)
-		file = dir .. "silence.ogg"
+	local file
+	if type(v[2]) ~= "table" then
+		file = dir .. v[2]
+		if not love.filesystem.exists(file) then
+			print("SFX: Could not load " .. dir)
+			file = dir .. "silence.ogg"
+		end
+	else
+		file = {}
+		for k, v in pairs(v[2]) do
+			table.insert(file, dir .. v)
+		end
 	end
 
 	local sfx = love.audio.newSource(file, how)
